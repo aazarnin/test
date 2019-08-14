@@ -20,8 +20,8 @@ public class ProductMethods implements Basket {
 
     @Override
     public void addProduct(Product product, int quantity) {
-//        int realQuantity = (products.containsKey(product1)?products.get(product1):0)+ quantity;
-        products.put(product1,quantity);
+        int realQuantity = (products.containsKey(product1)?products.get(product1):0)+ quantity;
+        products.put(product1,realQuantity);
         System.out.println(products);
     }
 
