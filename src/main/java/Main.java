@@ -1,6 +1,7 @@
 import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.stream.Stream;
 
 class Person implements Comparable<Person>{
     int age;
@@ -44,6 +45,6 @@ public class Main {
             System.out.println(o);
         }
 //        int max = set.stream().max(((o1, o2) -> Integer.compare(o1.get)))
-//        set.
+        Stream.of(1,2,3).max(Comparator.comparingInt(a -> a)).orElse(0);
     }
 }

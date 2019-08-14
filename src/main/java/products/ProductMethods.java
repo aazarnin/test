@@ -9,18 +9,19 @@ import java.util.Map;
 public class ProductMethods implements Basket {
 
     Product product1 = new Product("123abc","product1");
+    Product product2 = new Product("234qwe", "product2");
     Map<Product, Integer> products = new HashMap<>();
-
 
     @Test
     public void test() throws Exception {
-        addProduct(product1,1);
-        addProduct(product1,2);
+        addProduct(product1,3);
+        addProduct(product2,4);
     }
+
     @Override
     public void addProduct(Product product, int quantity) {
-        int realQuantity = (products.containsKey(product1)?products.get(product1):0)+5;
-        products.put(product1,realQuantity);
+//        int realQuantity = (products.containsKey(product1)?products.get(product1):0)+ quantity;
+        products.put(product1,quantity);
         System.out.println(products);
     }
 
@@ -31,7 +32,6 @@ public class ProductMethods implements Basket {
 
     @Override
     public void updateProductQuantity(Product product, int quantity) {
-
     }
 
     @Override
