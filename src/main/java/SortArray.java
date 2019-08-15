@@ -31,7 +31,7 @@ public class SortArray {
     public void sortUniqueValuesViaSet(){
 //        Set<Integer> setFromA1 = new Set<>(Arrays.asList(a1));
         Integer[] array1 = (new HashSet<>(Arrays.asList(a1))).stream().toArray(Integer[]::new);
-        System.out.println("Unique values in a1 array are: "+ array1);
+        System.out.println("Unique values in a1 array are: "+ Arrays.toString(array1));
 
     }
 
