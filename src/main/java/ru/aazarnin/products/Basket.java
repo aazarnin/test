@@ -1,4 +1,4 @@
-package products;
+package ru.aazarnin.products;
 
 import java.util.List;
 
