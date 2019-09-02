@@ -1,3 +1,5 @@
+package ru.aazarnin.collections;
+
 import org.junit.Test;
 
 import java.util.*;
@@ -19,6 +21,7 @@ public class SortArray {
 
     @Test
     public void sortUniqueValuesViaStream(){
+//        System.out.println("Unique values in a1 array are: "+ Arrays.stream(a1).distinct().collect(Collectors.toList()));
         Stream<Integer> streamFromA1 = Arrays.stream(a1);
         System.out.println("Unique values in a1 array are: "+ streamFromA1.distinct().collect(Collectors.toList()));
         Stream<Integer> streamFromA2 = Arrays.stream(a2);
